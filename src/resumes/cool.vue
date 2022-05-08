@@ -8,20 +8,61 @@
 
     <div class="content">
       <div class="content__left">
+
         <div class="section">
           <div class="section-headline">
-            {{ lang.about }}
+            {{ lang.contact }}
           </div>
 
           <div class="section-content section-content--plain">
-            {{ person.about }}
-            <br/>
-            <br/>
-            {{ person.knowledge }}
+            <div class="section-link">
+              <i class="section-link__icon material-icons">business</i>{{ person.contact.street }}
+            </div>
+
+            <a
+              class="section-link link"
+              :href="contactLinks.email">
+              <i class="section-link__icon material-icons">mail</i>{{ person.contact.email }}
+            </a>
+            <!--
+            <div class="section-link">
+              <i class="section-link__icon material-icons">phone</i>{{ person.contact.phone }}
+            </div>
+            -->
+            <a
+              target="_blank"
+              v-if="person.contact.website"
+              class="section-link link"
+              :href="person.contact.website">
+              <i class="section-link__icon fa fa-globe"></i>{{ person.contact.website }}
+            </a>
+
+            <a
+              target="_blank"
+              v-if="person.contact.linkedin"
+              class="section-link link"
+              :href="contactLinks.linkedin">
+              <i class="section-link__icon fa fa-linkedin"></i>{{ person.contact.linkedin }}
+            </a>
+
+            <a
+              target="_blank"
+              v-if="person.contact.github"
+              class="section-link link"
+              :href="contactLinks.github">
+              <i class="section-link__icon fa fa-github"></i>{{ person.contact.github }}
+            </a>
+
+            <a
+              v-if="person.contact.medium"
+              class="section-link link"
+              :href="contactLinks.medium">
+              <i class="section-link__icon fa fa-medium"></i>{{ person.contact.medium }}
+            </a>
           </div>
         </div>
 
-        <div
+         <div
           v-if="person.skills"
           class="section">
           <div class="section-headline">
@@ -44,53 +85,34 @@
 
         <div class="section">
           <div class="section-headline">
-            {{ lang.contact }}
+            {{ lang.about }}
           </div>
 
           <div class="section-content section-content--plain">
-            <div class="section-link">
-              <i class="section-link__icon material-icons">business</i>{{ person.contact.street }}
-            </div>
-
-            <a
-              class="section-link link"
-              :href="contactLinks.email">
-              <i class="section-link__icon material-icons">mail</i>{{ person.contact.email }}
-            </a>
-
-            <div class="section-link">
-              <i class="section-link__icon material-icons">phone</i>{{ person.contact.phone }}
-            </div>
-
-            <a
-              v-if="person.contact.website"
-              class="section-link link"
-              :href="person.contact.website">
-              <i class="section-link__icon fa fa-globe"></i>{{ person.contact.website }}
-            </a>
-
-            <a
-              v-if="person.contact.linkedin"
-              class="section-link link"
-              :href="contactLinks.linkedin">
-              <i class="section-link__icon fa fa-linkedin"></i>{{ person.contact.linkedin }}
-            </a>
-
-            <a
-              v-if="person.contact.github"
-              class="section-link link"
-              :href="contactLinks.github">
-              <i class="section-link__icon fa fa-github"></i>{{ person.contact.github }}
-            </a>
-
-            <a
-              v-if="person.contact.medium"
-              class="section-link link"
-              :href="contactLinks.medium">
-              <i class="section-link__icon fa fa-medium"></i>{{ person.contact.medium }}
-            </a>
+            {{ person.about }}
+            <br/>
+            <br/>
+            {{ person.about2 }}
+            <br/>
+            <br/>
+             {{ person.about3 }}
+            <br/>
+            <br/>
+             {{ person.about4 }}
+            <br/>
           </div>
         </div>
+
+        <div class="section">
+          <div class="section-headline">
+            {{ 'Language' }}
+          </div>
+
+          <div class="section-content section-content--plain">
+            {{ 'French   -   English   -   Chinese' }}
+          </div>
+        </div>
+
       </div>
 
       <div class="content__right">
@@ -139,7 +161,7 @@
             </a>
           </div>
         </div>
-      <!--
+     
         <div
           v-if="person.projects"
           class="section">
@@ -149,6 +171,7 @@
 
           <div class="section-content-grid">
             <a v-for="(project, index) in person.projects" :key="index"
+              target="_blank"
               class="section-content__item-grid"
               :class="{ link: project.url !== undefined}"
               :href="project.url">
@@ -158,7 +181,22 @@
             </a>
           </div>
         </div>
-         -->
+
+        <div class="section">
+
+          <div class="section-content-grid">
+            <a
+              target="_blank"
+              class="section-content__item-grid"
+              :class="{ link: true}"
+              href="https://github.com/MagicienDeCode/images/blob/master/certificates/eCertificate_xiang_java6.pdf">
+              <span class="section-content__header"> {{ 'ORACLE Certified Professional' }} </span>
+              <span class="section-content__text"> {{ 'Java SE 6 Programmer, July 25, 2014' }} </span>
+            </a>
+          </div>
+        </div>
+
+        <!--
         <div
           v-if="person.contributions"
           class="section">
@@ -181,7 +219,7 @@
             </a>
           </div>
         </div>
-       
+         -->
       </div>
     </div>
 
@@ -231,7 +269,7 @@ export default Vue.component(name, getVueOptions(name));
   width: @picture-size;
   border-radius: 50%;
   border: 5px solid @accent-color;
-  content: url('../../resume/id.jpg');
+  content: url('../../resume/xiang.jpg');
   z-index: 2;
 }
 

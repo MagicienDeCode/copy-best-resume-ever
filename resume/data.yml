@@ -5,7 +5,11 @@ name:
   first: Xiang
   middle:
   last: LI
-about: I define myself as a passionate and organized person. I am rigorous, efficient and I appreciate quality work. I am constantly learning about new technologies, and I undertake new personal projects in order to deepen my knowledge as well as to be able to propose solutions adapted to the work.
+about: I define myself as a passionate and organized person. I am rigorous, efficient and I appreciate quality work. 
+about2: I am constantly learning about new technologies, and I undertake new personal projects in order to deepen my knowledge as well as to be able to propose solutions adapted to the work.
+about3: I particularly like working in a team but I also know how to be independent when necessary.
+about4: I thrive not only working, but also bringing value to the company, in which the ability to face challenges, recognize and rectify mistakes and be tenacious is essential.
+
 position: Backend Software Engineer (Kotlin)
 
 birth:
@@ -15,7 +19,7 @@ birth:
 # you may add more experiences by duplicating the template
 
 experience:
-- company: Slimpay
+- company: SlimPay
   position: Software Engineer
   timeperiod: since October 2018
   description: Programming and watching cute cat videos.
@@ -35,13 +39,26 @@ education:
   timeperiod: 2016 - 2018 (Université Paris-Diderot)
   description: Major in Engineering, Algorithms, Distribution systems and Database.
 
+- degree: French Language (France) 
+  timeperiod: 2015 - 2016 (Université Paris-Diderot)
+  description: French, Culture, History.
+
 - degree: Bachelor of Information Management System (China)
   timeperiod: 2011 - 2015 (Henan University of Economics and Law)
   description: Major in Engineering, Information systems and Accounting.
 
+# language
+language:
+- name: French
+  level: 90
+- name: English
+  level: 80
+
 # skill level goes from 0 to 100
 skills:
-- name: Java & Kotlin
+- name: Kotlin
+  level: 99
+- name: Java
   level: 99
 - name: SpringBoot
   level: 99
@@ -57,36 +74,21 @@ skills:
   level: 70
 - name: Docker & Docker Compose
   level: 99
-knowledge: I particularly like working in a team but I also know how to be independent when necessary. I thrive not only working, but also bringing value to the company, in which the ability to face challenges, recognize and rectify mistakes and be tenacious is essential.
+knowledge:  
 projects:
-- name: best-resume-ever
-  platform: Vue
-  timeperiod: February 2016
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
-
-# optional, not all resume templates have hobbies included
-hobbies:
-- name: Video Games
-  iconClass: fa fa-gamepad
-  url: https://example.com
-
-- name: Drawing
-  iconClass: fa fa-pencil
-  url: https://example.com
-
-contributions:
-- name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
-  url: https://github.com/salomonelli/best-resume-ever
+- name: Algorithm Training
+  platform: LeetCode
+  description: Every day starting from an algorithm problem 💪 
+  url: https://leetcode.com/MagicienDeCode/
 
 contact:
   email: xiangfr007@gmail.com
   phone: 07 60 71 72 95
   street: Rosny sous Bois (France)
   city: France
-  website: www.magiciendecode.fr
-  github: github.com/MagicienDeCode
+  website: https://www.magiciendecode.fr
+  github: MagicienDeCode
+  linkedin: xiang-li-3346b512a
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
 lang: en
 `
