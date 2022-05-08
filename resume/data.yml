@@ -1,0 +1,92 @@
+/* #*/ export const PERSON = `
+# Any fields left unchanged, please delete so your resume is fully yours!
+
+name:
+  first: Xiang
+  middle:
+  last: LI
+about: I define myself as a passionate and organized person. I am rigorous, efficient and I appreciate quality work. I am constantly learning about new technologies, and I undertake new personal projects in order to deepen my knowledge as well as to be able to propose solutions adapted to the work.
+position: Backend Software Engineer (Kotlin)
+
+birth:
+  year: 1992
+  location: China
+
+# you may add more experiences by duplicating the template
+
+experience:
+- company: Slimpay
+  position: Software Engineer
+  timeperiod: since October 2018
+  description: Programming and watching cute cat videos.
+
+- company: Monbanquet.fr
+  position: Full Stack Developer
+  timeperiod: April 2018 - September 2018 (6 months)
+  description: Fulfillment of extremely important tasks.
+
+- company: Whaty
+  position: Developer Web
+  timeperiod: April 2015 - August 2015 (5 months)
+  description: JaveEE, project online study system http://edu.bjdzgx.com/home/
+
+education:
+- degree: Master of Computer Science (France) 
+  timeperiod: 2016 - 2018 (Université Paris-Diderot)
+  description: Major in Engineering, Algorithms, Distribution systems and Database.
+
+- degree: Bachelor of Information Management System (China)
+  timeperiod: 2011 - 2015 (Henan University of Economics and Law)
+  description: Major in Engineering, Information systems and Accounting.
+
+# skill level goes from 0 to 100
+skills:
+- name: Java & Kotlin
+  level: 99
+- name: SpringBoot
+  level: 99
+- name: SQL / NoSQL
+  level: 99
+- name: AxonFramework
+  level: 88
+- name: EventSourcing
+  level: 77
+- name: GitLab CI/CD
+  level: 80
+- name: Kafka
+  level: 70
+- name: Docker & Docker Compose
+  level: 99
+knowledge: I particularly like working in a team but I also know how to be independent when necessary. I thrive not only working, but also bringing value to the company, in which the ability to face challenges, recognize and rectify mistakes and be tenacious is essential.
+projects:
+- name: best-resume-ever
+  platform: Vue
+  timeperiod: February 2016
+  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
+  url: https://github.com/salomonelli/best-resume-ever
+
+# optional, not all resume templates have hobbies included
+hobbies:
+- name: Video Games
+  iconClass: fa fa-gamepad
+  url: https://example.com
+
+- name: Drawing
+  iconClass: fa fa-pencil
+  url: https://example.com
+
+contributions:
+- name: best-resume-ever
+  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
+  url: https://github.com/salomonelli/best-resume-ever
+
+contact:
+  email: xiangfr007@gmail.com
+  phone: 07 60 71 72 95
+  street: Rosny sous Bois (France)
+  city: France
+  website: www.magiciendecode.fr
+  github: github.com/MagicienDeCode
+# en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
+lang: en
+`
