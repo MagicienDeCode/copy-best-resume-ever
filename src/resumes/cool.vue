@@ -141,9 +141,9 @@
               <br/>
               <span class="section-content__text--light">{{ '- Since October 2021, PIS team, design and develop new payment initiation service ecosystem (SlimCollect), springboot with kotlin, axon framework, domain driven design, event sourcing.' }}</span>
               <br/>
-              <span class="section-content__text--light">{{ '- Since January 2021, PaymentFactory team, resolve the balance problem, 1.Help Financial team to prepare data for ACPR audit, 2.Develop a kotlin based project with SQL native (Improve daily reconciliation of balance from 4 days to 1 hour average)' }}</span>
+              <span class="section-content__text--light">{{ '- Since January 2021, PaymentFactory team, 1.Resolve balance problems, 2.Help Financial team to prepare data for ACPR audit, 3.Develop a kotlin based project with SQL native (improve daily reconciliation of balance from 4 days to 1 hour average).' }}</span>
               <br/>
-              <span class="section-content__text--light">{{ '- Since 2020, Innovation team, one of the pioneers for Kotlin and open-banking (PSD2) product. 1.Proof of Concept with Kotlin, connect to sandbox of banks. 2.ETL system with Kotlin(Extract-Transform-Load).' }}</span>
+              <span class="section-content__text--light">{{ '- Since 2020, Innovation team, one of the pioneers for Kotlin and open-banking (PSD2) product. 1.Proof of Concept with Kotlin, connect to sandbox of bank. 2.ETL system with Kotlin(Extract-Transform-Load).' }}</span>
               <!--
               <br/>
               <span class="section-content__text--light">{{ '- Develop new feautres in legacy systems in Java(8 and 11), maintaining different microservices.' }}</span>
