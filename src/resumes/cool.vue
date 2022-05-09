@@ -123,6 +123,60 @@
 
           <div class="section-content">
             <a
+              target="_blank"
+              class="section-content__item"
+              :class="{ link: true}"
+              :href="'https://www.slimpay.com/fr/'">
+              <span class="section-content__header">{{ 'Full Stack Software Engineer' }}</span>
+
+
+              <span class="section-content__subheader">
+                {{ 'SlimPay' }}
+                <span class="section-content__plain">{{ 'France' }}</span>
+              </span>
+
+              <div class="section-content__text">{{ 'October 2018 - now (3 years 8 months)' }}</div>
+              <br/>
+              <span class="section-content__text--light--bold">{{ 'SpringBoot Kotlin AxonFramework PostgreSQL Docker' }}</span>
+              <br/>
+              <span class="section-content__text--light">{{ '- Since October 2021, PIS team, design and develop new payment initiation service ecosystem (SlimCollect), springboot with kotlin, axon framework, domain driven design, event sourcing.' }}</span>
+              <br/>
+              <span class="section-content__text--light">{{ '- Since January 2021, PaymentFactory team, resolve the balance problem, 1.Help Financial team to prepare data for ACPR audit, 2.Develop a kotlin based project with SQL native (Improve daily reconciliation of balance from 4 days to 1 hour average)' }}</span>
+              <br/>
+              <span class="section-content__text--light">{{ '- Since 2020, Innovation team, one of the pioneers for Kotlin and open-banking (PSD2) product. 1.Proof of Concept with Kotlin, connect to sandbox of banks. 2.ETL system with Kotlin(Extract-Transform-Load).' }}</span>
+              <!--
+              <br/>
+              <span class="section-content__text--light">{{ '- Develop new feautres in legacy systems in Java(8 and 11), maintaining different microservices.' }}</span>
+              -->
+            </a>
+            <br/>
+            <a
+              target="_blank"
+              class="section-content__item"
+              :class="{ link: true}"
+              :href="'https://monbanquet.fr/'">
+
+              <span class="section-content__header">{{ 'Full Stack Developer' }}</span>
+              <span class="section-content__subheader">
+                {{ 'Monbanquet.fr' }}
+                <span class="section-content__plain">{{ 'France' }}</span>
+              </span>
+
+              <div class="section-content__text">{{ 'April 2018 - September 2018 (6 months)' }}</div>
+              <br/>
+              <span class="section-content__text--light--bold">{{ 'Java10 SpringBoot MongoDB Kubernetes React Angular Kafka' }}</span>
+              <br/>
+              <span class="section-content__text--light">{{ '- Refactoring back office, participate in the development of new features' }}</span>
+              <br/>
+              <span class="section-content__text--light">{{ '- Learn and create microservices for delivery service, billing service' }}</span>
+              <br/>
+              <span class="section-content__text--light">{{ '- Participate in the design and development for the site monbanquet.fr' }}</span>
+              <br/>
+              <span class="section-content__text--light">{{ '- Monitoring and maintaining of all microservices using AWS Kubernetes' }}</span>
+            </a>
+            <br/>
+            <a
+              target="_blank"
               v-for="(experience, index) in person.experience"
               :key="index"
               class="section-content__item"
@@ -162,6 +216,23 @@
           </div>
         </div>
      
+
+        <div
+          v-if="person.projects"
+          class="section">
+          <div class="section-content-grid">
+            <a v-for="(project, index) in person.projects" :key="index"
+              target="_blank"
+              class="section-content__item-grid"
+              :class="{ link: project.url !== undefined}"
+              :href="project.url">
+              <span class="section-content__header"> {{ project.name }} - {{ project.platform }} </span>
+              <span class="section-content__subheader"></span>
+              <span class="section-content__text"> {{ project.description }} </span>
+            </a>
+          </div>
+        </div>
+        <!--
         <div
           v-if="person.projects"
           class="section">
@@ -181,7 +252,7 @@
             </a>
           </div>
         </div>
-
+        -->
         <div class="section">
 
           <div class="section-content-grid">
@@ -380,6 +451,9 @@ export default Vue.component(name, getVueOptions(name));
 
     &--light {
       font-size: 12px;
+    }
+    &--bold {
+      font-weight: bold;
     }
   }
 
