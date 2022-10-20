@@ -135,11 +135,11 @@
                 <span class="section-content__plain">{{ 'France' }}</span>
               </span>
 
-              <div class="section-content__text">{{ 'October 2018 - now (3 years 8 months)' }}</div>
+              <div class="section-content__text">{{ 'October 2018 - now (+4 years)' }}</div>
               <br/>
               <span class="section-content__text--light--bold">{{ 'SpringBoot Kotlin AxonFramework PostgreSQL Docker' }}</span>
               <br/>
-              <span class="section-content__text--light">{{ '- Since October 2021, PIS team, design and develop new payment initiation service ecosystem (SlimCollect), springboot with kotlin, axon framework, domain driven design, event sourcing.' }}</span>
+              <span class="section-content__text--light">{{ '- Since October 2021, PIS team, design and develop new payment initiation service ecosystem (SlimCollect), springboot with kotlin, axon framework CQRS, domain driven design, event sourcing.' }}</span>
               <br/>
               <span class="section-content__text--light">{{ '- Since January 2021, PaymentFactory team, 1.Resolve balance problems, 2.Help Financial team to prepare data for ACPR audit, 3.Develop a kotlin based project with SQL native (improve daily reconciliation of balance from 4 days to 1 hour average).' }}</span>
               <br/>
@@ -348,7 +348,7 @@ export default Vue.component(name, getVueOptions(name));
   width: calc(100% - @base-padding * 2);
   height: @banner-height;
   padding: @base-padding;
-  background-color: @banner-color;
+  background-color: purple;
   /*
     background-image: url('../../resume/banner.png');
     background-repeat: no-repeat;
