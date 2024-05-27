@@ -3,7 +3,10 @@
     <div class="banner">
       <div class="banner__fullname">{{ person.name.first }} {{ person.name.middle }} {{ person.name.last }}</div>
       <div class="banner__position">{{ person.position }}</div>
+      
       <div v-if="person.birth" class="banner__location">{{ lang.born }} {{person.birth.year}} {{ lang.bornIn }} {{person.birth.location}}</div>
+      <br/>
+      <div class="banner__position">{{ 'Kotlin, Python3, Java' }}</div>
     </div>
 
     <div class="content">
@@ -109,7 +112,7 @@
           </div>
 
           <div class="section-content section-content--plain">
-            {{ 'French   -   English   -   Chinese' }}
+            {{ 'English   -   French   -   Chinese' }}
           </div>
         </div>
 
@@ -127,23 +130,38 @@
               class="section-content__item"
               :class="{ link: true}"
               :href="'https://www.slimpay.com/fr/'">
-              <span class="section-content__header">{{ 'Full Stack Software Engineer' }}</span>
+              <span class="section-content__header"><img class="company-icon-1"/>{{ '(Full time) Tech Lead' }}</span>
 
 
               <span class="section-content__subheader">
                 {{ 'SlimPay' }}
                 <span class="section-content__plain">{{ 'France' }}</span>
+                <span class="section-content__plain--times">{{ 'October 2018 - now (~6 years)' }}</span>
               </span>
-
-              <div class="section-content__text">{{ 'October 2018 - now (+4 years)' }}</div>
               <br/>
-              <span class="section-content__text--light--bold">{{ 'SpringBoot Kotlin AxonFramework PostgreSQL Docker' }}</span>
+              <span class="section-content__text--light--bold">{{ '➡︎ Since 2023, Tech Lead ' }}</span>
               <br/>
-              <span class="section-content__text--light">{{ '- Since October 2021, PIS team, design and develop new payment initiation service ecosystem (SlimCollect), springboot with kotlin, axon framework CQRS, domain driven design, event sourcing.' }}</span>
+              <span class="section-content__text--light">{{ '- Design and develop new open banking products, guiding team members, propose technical improvements.' }}</span>
               <br/>
-              <span class="section-content__text--light">{{ '- Since January 2021, PaymentFactory team, 1.Resolve balance problems, 2.Help Financial team to prepare data for ACPR audit, 3.Develop a kotlin based project with SQL native (improve daily reconciliation of balance from 4 days to 1 hour average).' }}</span>
+              <span class="section-content__text--light">{{ '- Integration with Trustly products, new version of SlimCollects (PIS/AIS)' }}</span>
               <br/>
-              <span class="section-content__text--light">{{ '- Since 2020, Innovation team, one of the pioneers for Kotlin and open-banking (PSD2) product. 1.Proof of Concept with Kotlin, connect to sandbox of bank. 2.ETL system with Kotlin(Extract-Transform-Load).' }}</span>
+              <span class="section-content__text--light">{{ '- Webhook projects' }}</span>
+              <br/>
+              <span class="section-content__text--light">{{ '- Instant Payment solution' }}</span>
+              
+              <br/>
+              <span class="section-content__text--light--bold">{{ '➡︎ Since 2021, Full Stack Software Engineer ' }}</span>
+              <br/>
+              <span class="section-content__text--light">{{ '- PIS team, design and develop new SlimCollect(PIS) ecosystem, springboot, axon framework CQRS, domain driven design, event sourcing.' }}</span>
+              <br/>
+              <span class="section-content__text--light">{{ '- PaymentFactory team, 1.Resolve balance problems, 2.Help Financial team to prepare ACPR audit, 3.Develop a kotlin based project with SQL native (improve daily reconciliation of balance from 4 days to 1 hour average).' }}</span>
+              <br/>
+              <span class="section-content__text--light--bold">{{ '➡︎ Since 2018, Junior Software Engineer ' }}</span>
+              <br/>
+              <span class="section-content__text--light">{{ '- Innovation team, one of the pioneers for Kotlin and open-banking (PSD2) product. 1.Proof of Concept with Kotlin, connect to sandbox of bank. 2.ETL system with Kotlin(Extract-Transform-Load).' }}</span>
+              <br/>
+              <br/>
+              <span class="section-content__text--light--bold">{{ 'SpringBoot, Kotlin, Java, Domain Driven Design, Event Sourcing, CQRS, AxonFramework, Kafka, DynamoDB, PostgreSQL, Docker' }}</span>
               <!--
               <br/>
               <span class="section-content__text--light">{{ '- Develop new feautres in legacy systems in Java(8 and 11), maintaining different microservices.' }}</span>
@@ -156,15 +174,13 @@
               :class="{ link: true}"
               :href="'https://monbanquet.fr/'">
 
-              <span class="section-content__header">{{ 'Full Stack Developer' }}</span>
+              <span class="section-content__header"><img class="company-icon-2"/>{{ '(Internship) Full Stack Developer' }}</span>
               <span class="section-content__subheader">
                 {{ 'Monbanquet.fr' }}
                 <span class="section-content__plain">{{ 'France' }}</span>
+                <span class="section-content__plain--times2">{{ 'April 2018 - September 2018 (6 months)' }}</span>
               </span>
 
-              <div class="section-content__text">{{ 'April 2018 - September 2018 (6 months)' }}</div>
-              <br/>
-              <span class="section-content__text--light--bold">{{ 'Java10 SpringBoot MongoDB Kubernetes React Angular Kafka' }}</span>
               <br/>
               <span class="section-content__text--light">{{ '- Refactoring back office, participate in the development of new features' }}</span>
               <br/>
@@ -173,8 +189,12 @@
               <span class="section-content__text--light">{{ '- Participate in the design and development for the site monbanquet.fr' }}</span>
               <br/>
               <span class="section-content__text--light">{{ '- Monitoring and maintaining of all microservices using AWS Kubernetes' }}</span>
+              <br/>
+              <br/>
+              <span class="section-content__text--light--bold">{{ 'Java, SpringBoot, MongoDB, Kubernetes, React, Angular, Kafka' }}</span>
             </a>
             <br/>
+            <!--
             <a
               target="_blank"
               v-for="(experience, index) in person.experience"
@@ -192,6 +212,7 @@
               <div class="section-content__text">{{ experience.timeperiod }}</div>
               <span class="section-content__text--light">{{ experience.description }}</span>
             </a>
+            -->
           </div>
         </div>
 
@@ -208,7 +229,7 @@
               :class="{ link: education.website !== undefined}"
               :href="education.website">
 
-              <span class="section-content__header"> {{ education.school }} </span>
+              <span class="section-content__header"> {{  education.school }} </span>
               <span class="section-content__subheader">{{ education.degree }}</span>
               <span class="section-content__text"> {{ education.timeperiod }} </span>
               <span class="section-content__text--light"> {{ education.description }} </span>
@@ -216,7 +237,7 @@
           </div>
         </div>
      
-
+      <!--
         <div
           v-if="person.projects"
           class="section">
@@ -232,6 +253,7 @@
             </a>
           </div>
         </div>
+        -->
         <!--
         <div
           v-if="person.projects"
@@ -253,6 +275,24 @@
           </div>
         </div>
         -->
+
+        <div class="section">
+          <div class="section-headline">
+            <i class="section-headline__icon material-icons">local_library</i>{{ 'Lifelong learning' }}
+          </div>
+
+          <div class="section-content">
+            <a
+              target="_blank"
+              class="section-content__item"
+              :class="{ link: true}"
+              :href="'https://leetcode.com/MagicienDeCode/'">
+
+              <span class="section-content__text--light--bold">➡︎ Algorithm Training: LeetCode, 1001 solved</span>
+            </a>
+          </div>
+        </div>
+        <!--
         <div class="section">
 
           <div class="section-content-grid">
@@ -267,7 +307,7 @@
           </div>
         </div>
 
-        <!--
+        
         <div
           v-if="person.contributions"
           class="section">
@@ -293,7 +333,7 @@
          -->
       </div>
     </div>
-
+    <img class="qr-code"/>
     <img class="picture"/>
   </div>
 </template>
@@ -332,6 +372,19 @@ export default Vue.component(name, getVueOptions(name));
   font-size: 0.9em;
 }
 
+.company-icon-1{
+  height: 20px;
+  width: 20px;
+  content: url('../../resume/slimpay.jpg');
+  margin-right: 10px;
+}
+.company-icon-2{
+  height: 20px;
+  width: 20px;
+  content: url('../../resume/mb.jpg');
+  margin-right: 10px;
+}
+
 .picture {
   position: absolute;
   top: @banner-height - @picture-offset;
@@ -340,8 +393,18 @@ export default Vue.component(name, getVueOptions(name));
   width: @picture-size;
   border-radius: 50%;
   border: 5px solid @accent-color;
-  content: url('../../resume/xiang.jpg');
+  content: url('../../resume/lixiang.jpg');
   z-index: 2;
+}
+
+.qr-code{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 40px;
+  right: 40px;
+  content: url('../../resume/qr2.png');
+  border: 5px solid white;
 }
 
 .banner {
@@ -454,6 +517,14 @@ export default Vue.component(name, getVueOptions(name));
     }
     &--bold {
       font-weight: bold;
+    }
+    &--times{
+      font-size: 12px;
+      padding-left: 140px;
+    }
+    &--times2{
+      font-size: 12px;
+      padding-left: 50px;
     }
   }
 

@@ -10,7 +10,7 @@ about2: I am constantly learning about new technologies, and I undertake new per
 about3: I particularly like working in a team but I also know how to be independent when necessary.
 about4: I thrive not only by working, but also by bringing value to the company, in which the ability to face challenges, recognize and rectify mistakes and be tenacious is essential.
 
-position: Backend Software Engineer (Kotlin)
+position: Tech Lead 
 
 birth:
   year: 1992
@@ -34,15 +34,15 @@ experience:
   website: https://www.whaty.com/cms/
 
 education:
-- degree: Master of Computer Science (France) 
+- degree: ➡︎ Master of Computer Science (France) 
   timeperiod: 2016 - 2018 (Université Paris-Diderot)
   description: Major in Engineering, Algorithms, Distribution systems and Database.
 
-- degree: French Language (France) 
+- degree: ➡︎ French Language (France) 
   timeperiod: 2015 - 2016 (Université Paris-Diderot)
   #description: French, Culture, History.
 
-- degree: Bachelor of Information Management System (China)
+- degree: ➡︎ Bachelor of Information Management System (China)
   timeperiod: 2011 - 2015 (Henan University of Economics and Law)
   description: Major in Engineering, Information systems and Accounting.
 
@@ -56,9 +56,11 @@ language:
 # skill level goes from 0 to 100
 skills:
 - name: Kotlin
+  level: 98
+- name: Python3
   level: 99
 - name: Java
-  level: 99
+  level: 97
 - name: SpringBoot
   level: 99
 - name: SQL / NoSQL
@@ -82,8 +84,7 @@ projects:
 
 contact:
   email: xiangfr007@gmail.com
-  phone: 07 60 71 72 95
-  street: Rosny sous Bois (France)
+  street: Paris (France)
   city: France
   website: https://www.magiciendecode.fr
   github: MagicienDeCode
