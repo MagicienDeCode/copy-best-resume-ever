@@ -129,7 +129,7 @@
               target="_blank"
               class="section-content__item"
               :class="{ link: true}"
-              :href="'https://www.slimpay.com/fr/'">
+              :href="'https://www.slimpay.com/'">
               <span class="section-content__header"><img class="company-icon-1"/>{{ '(Full time) Tech Lead' }}</span>
 
 
