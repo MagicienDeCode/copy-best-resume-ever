@@ -143,11 +143,11 @@
               <br/>
               <span class="section-content__text--light">{{ '- Design and develop new open banking products, guiding team members, propose technical improvements.' }}</span>
               <br/>
-              <span class="section-content__text--light">{{ '- Integration with Trustly products, new version of SlimCollects (PIS/AIS)' }}</span>
+              <span class="section-content__text--light">{{ '- Integration with Trustly products, new version of SlimCollects (PIS/AIS).' }}</span>
               <br/>
-              <span class="section-content__text--light">{{ '- Webhook projects' }}</span>
+              <span class="section-content__text--light">{{ '- Webhook projects.' }}</span>
               <br/>
-              <span class="section-content__text--light">{{ '- Instant Payment solution' }}</span>
+              <span class="section-content__text--light">{{ '- Instant payment solution.' }}</span>
               
               <br/>
               <span class="section-content__text--light--bold">{{ '➡︎ Since 2021, Full Stack Software Engineer ' }}</span>
@@ -182,13 +182,13 @@
               </span>
 
               <br/>
-              <span class="section-content__text--light">{{ '- Refactoring back office, participate in the development of new features' }}</span>
+              <span class="section-content__text--light">{{ '- Refactoring back office, participate in the development of new features.' }}</span>
               <br/>
-              <span class="section-content__text--light">{{ '- Learn and create microservices for delivery service, billing service' }}</span>
+              <span class="section-content__text--light">{{ '- Learn and create microservices for delivery service, billing service.' }}</span>
               <br/>
-              <span class="section-content__text--light">{{ '- Participate in the design and development for the site monbanquet.fr' }}</span>
+              <span class="section-content__text--light">{{ '- Participate in the design and development for the site monbanquet.fr.' }}</span>
               <br/>
-              <span class="section-content__text--light">{{ '- Monitoring and maintaining of all microservices using AWS Kubernetes' }}</span>
+              <span class="section-content__text--light">{{ '- Monitoring and maintaining of all microservices using AWS Kubernetes.' }}</span>
               <br/>
               <br/>
               <span class="section-content__text--light--bold">{{ 'Java, SpringBoot, MongoDB, Kubernetes, React, Angular, Kafka' }}</span>
@@ -288,7 +288,7 @@
               :class="{ link: true}"
               :href="'https://leetcode.com/MagicienDeCode/'">
 
-              <span class="section-content__text--light--bold">➡︎ Algorithm Training: LeetCode, 1001 solved</span>
+              <span class="section-content__text--light--bold">➡︎ Algorithm Training: LeetCode, 1000+ solved.</span>
             </a>
           </div>
         </div>
